@@ -17,46 +17,14 @@ class LoginController: UIViewController {
         iv.tintColor = .white
         return iv
     }()
+    
     // lazy: it won't actually load that property untill it's time for it to happen
-    private lazy var emailContainerView: UIView = {
-        let containerView = UIView()
-        containerView.backgroundColor = .clear
-        
-        let iv = UIImageView()
-        iv.image = UIImage(systemName: "envelope")
-        iv.tintColor = .white
-        containerView.addSubview(iv)
-        iv.centerY(inView: containerView)
-        iv.anchor(left: containerView.leftAnchor, paddingLeft: 8)
-        iv.setDimensions(height: 24, width: 28)
-        
-        containerView.addSubview(emailTextField)
-        emailTextField.centerY(inView: containerView)
-        emailTextField.anchor(left: iv.rightAnchor, bottom: containerView.bottomAnchor,
-                              right: containerView.rightAnchor, paddingLeft: 8, paddingBottom: -8)
-        
-        containerView.setHeight(height: 50)
-        return containerView
+    private lazy var emailContainerView: InputContainerView = {
+        return InputContainerView(image: #imageLiteral(resourceName: "ic_mail_outline_white_2x.png"), textField: emailTextField)
     }()
     
-    private lazy var passwordContainerView: UIView = {
-        let containerView = UIView()
-        containerView.backgroundColor = .clear
-        
-        let iv = UIImageView()
-        iv.image = UIImage(systemName: "lock")
-        iv.tintColor = .white
-        containerView.addSubview(iv)
-        iv.centerY(inView: containerView)
-        iv.anchor(left: containerView.leftAnchor, paddingLeft: 8)
-        iv.setDimensions(height: 28, width: 28)
-        
-        containerView.addSubview(passwordTextField)
-        passwordTextField.centerY(inView: containerView)
-        passwordTextField.anchor(left: iv.rightAnchor, bottom: containerView.bottomAnchor,
-                              right: containerView.rightAnchor, paddingLeft: 8, paddingBottom: -8)
-        containerView.setHeight(height: 50)
-        return containerView
+    private lazy var passwordContainerView: InputContainerView = {
+        return InputContainerView(image: #imageLiteral(resourceName: "ic_lock_outline_white_2x.png"), textField: passwordTextField)
     }()
     
     private let loginButton: UIButton = {
@@ -69,17 +37,11 @@ class LoginController: UIViewController {
         return button
     }()
     
-    private let emailTextField: UITextField = {
-        let tf = UITextField()
-        tf.placeholder = "Email"
-        tf.textColor = .white
-        return tf
-    }()
+    private let emailTextField = CustomTextField(placeholder: "Email")
     
-    private let passwordTextField: UITextField = {
-        let tf = UITextField()
-        tf.placeholder = "Password"
-        tf.textColor = .white
+    private let passwordTextField: CustomTextField = {
+        let tf = CustomTextField(placeholder: "password")
+        tf.isSecureTextEntry = true
         return tf
     }()
     

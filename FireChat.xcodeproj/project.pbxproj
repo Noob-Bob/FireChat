@@ -22,6 +22,8 @@
 		901EDE9F2B0B60E400957248 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901EDE9E2B0B60E400957248 /* LoginController.swift */; };
 		901EDEA12B0B614600957248 /* RegistrationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901EDEA02B0B614600957248 /* RegistrationController.swift */; };
 		901EDEA32B0B63CE00957248 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901EDEA22B0B63CE00957248 /* Extensions.swift */; };
+		90E12F082B0EBCDC00C63379 /* InputContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E12F072B0EBCDC00C63379 /* InputContainerView.swift */; };
+		90E12F0A2B0EC27900C63379 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E12F092B0EC27900C63379 /* CustomTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +43,8 @@
 		901EDE9E2B0B60E400957248 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		901EDEA02B0B614600957248 /* RegistrationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationController.swift; sourceTree = "<group>"; };
 		901EDEA22B0B63CE00957248 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		90E12F072B0EBCDC00C63379 /* InputContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputContainerView.swift; sourceTree = "<group>"; };
+		90E12F092B0EC27900C63379 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +135,8 @@
 		901EDE982B0B590400957248 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				90E12F072B0EBCDC00C63379 /* InputContainerView.swift */,
+				90E12F092B0EC27900C63379 /* CustomTextField.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -165,7 +171,6 @@
 				0174D3D25329927187056CAF /* Pods-FireChat.debug.xcconfig */,
 				3B4592E4EF2C2F624C155CD5 /* Pods-FireChat.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -294,12 +299,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				901EDE7B2B0B47EF00957248 /* ViewController.swift in Sources */,
+				90E12F082B0EBCDC00C63379 /* InputContainerView.swift in Sources */,
 				901EDE772B0B47EF00957248 /* AppDelegate.swift in Sources */,
 				901EDE9C2B0B598400957248 /* ConversationsController.swift in Sources */,
 				901EDE792B0B47EF00957248 /* SceneDelegate.swift in Sources */,
 				901EDEA12B0B614600957248 /* RegistrationController.swift in Sources */,
 				901EDE9F2B0B60E400957248 /* LoginController.swift in Sources */,
 				901EDEA32B0B63CE00957248 /* Extensions.swift in Sources */,
+				90E12F0A2B0EC27900C63379 /* CustomTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
