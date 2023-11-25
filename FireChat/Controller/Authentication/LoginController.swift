@@ -7,9 +7,15 @@
 
 import UIKit
 
+protocol AuthenticationControllerProtocol {
+    func checkFormStatus()
+}
+
 class LoginController: UIViewController {
     
     //MARK: - properties
+    
+    private var viewModel = LoginViewModel()
     
     private let iconImage: UIImageView = {
         let iv = UIImageView()
@@ -31,9 +37,12 @@ class LoginController: UIViewController {
         let button = UIButton(type: .system)
         button.setTitle("Log in", for: .normal)
         button.layer.cornerRadius = 5
-        button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 16)
-        button.backgroundColor = .systemRed
+        button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 18)
+        button.backgroundColor = .gray
+        button.setTitleColor(.white, for: .normal)
         button.setHeight(height: 50)
+        button.isEnabled = false
+        button.addTarget(self, action: #selector(handleLogin), for: .touchUpInside)
         return button
     }()
     
@@ -45,6 +54,17 @@ class LoginController: UIViewController {
         return tf
     }()
     
+    private let dontHaveAccountButton: UIButton = {
+        let button = UIButton(type: .system)
+        let attributedTitle = NSMutableAttributedString(string: "Don't have an account?    ", attributes: [.font: UIFont.systemFont(ofSize: 16), .foregroundColor: UIColor.white])
+        
+        attributedTitle.append(NSAttributedString(string: "Sign up", attributes: [.font: UIFont.boldSystemFont(ofSize: 16), .foregroundColor: UIColor.white]))
+        
+        button.setAttributedTitle(attributedTitle, for: .normal)
+        button.addTarget(self, action: #selector(handleShowSignUp), for: .touchUpInside)
+        return button
+    }()
+    
     
     //MARK: - LifeCycle
 
@@ -52,6 +72,27 @@ class LoginController: UIViewController {
         super.viewDidLoad()
         configureUI()
         
+    }
+    
+    //MARK: - selector
+    
+    @objc func handleLogin() {
+        print("DEBUG: login button is tapped")
+    }
+    
+    @objc func handleShowSignUp() {
+        let controller = RegistrationController()
+        navigationController?.pushViewController(controller, animated: true)
+    }
+    
+    @objc func textDidChange(sender: UITextField) {
+        if sender == emailTextField {
+            viewModel.email = sender.text
+        } else {
+            viewModel.password = sender.text
+        }
+        
+        checkFormStatus()
     }
     
     //MARK: - helpers
@@ -86,13 +127,22 @@ class LoginController: UIViewController {
         stack.anchor(top: iconImage.bottomAnchor, left: view.leftAnchor, right: view.rightAnchor,
         paddingTop: 32, paddingLeft: 32, paddingRight: 32)
         
+        view.addSubview(dontHaveAccountButton)
+        dontHaveAccountButton.anchor(left: view.leftAnchor, bottom: view.safeAreaLayoutGuide.bottomAnchor, right: view.rightAnchor, paddingLeft: 32, paddingRight: 32)
+        
+        emailTextField.addTarget(self, action: #selector(textDidChange), for: .editingChanged)
+        passwordTextField.addTarget(self, action: #selector(textDidChange), for: .editingChanged)
     }
-    
-    func configureGradientLayer() {
-        let gradient = CAGradientLayer()
-        gradient.colors = [UIColor.systemPurple.cgColor, UIColor.systemPink.cgColor]
-        gradient.locations = [0, 1]
-        view.layer.addSublayer(gradient)
-        gradient.frame = view.frame
+}
+
+extension LoginController: AuthenticationControllerProtocol {
+    func checkFormStatus() {
+        if viewModel.formIsValid {
+            loginButton.isEnabled = true
+            loginButton.backgroundColor = .systemRed
+        } else {
+            loginButton.isEnabled = false
+            loginButton.backgroundColor = .gray
+        }
     }
 }
