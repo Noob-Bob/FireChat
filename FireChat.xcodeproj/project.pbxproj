@@ -26,6 +26,7 @@
 		90E12F0A2B0EC27900C63379 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E12F092B0EC27900C63379 /* CustomTextField.swift */; };
 		90E12F0C2B0ED21E00C63379 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E12F0B2B0ED21E00C63379 /* LoginViewModel.swift */; };
 		90E12F0E2B11D4E000C63379 /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E12F0D2B11D4E000C63379 /* RegistrationViewModel.swift */; };
+		90E12F112B14622C00C63379 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E12F102B14622C00C63379 /* AuthService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +50,7 @@
 		90E12F092B0EC27900C63379 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		90E12F0B2B0ED21E00C63379 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		90E12F0D2B11D4E000C63379 /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
+		90E12F102B14622C00C63379 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,7 @@
 		901EDE932B0B58E200957248 /* API */ = {
 			isa = PBXGroup;
 			children = (
+				90E12F102B14622C00C63379 /* AuthService.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -315,6 +318,7 @@
 				901EDE7B2B0B47EF00957248 /* ViewController.swift in Sources */,
 				90E12F0E2B11D4E000C63379 /* RegistrationViewModel.swift in Sources */,
 				90E12F082B0EBCDC00C63379 /* InputContainerView.swift in Sources */,
+				90E12F112B14622C00C63379 /* AuthService.swift in Sources */,
 				901EDE772B0B47EF00957248 /* AppDelegate.swift in Sources */,
 				901EDE9C2B0B598400957248 /* ConversationsController.swift in Sources */,
 				901EDE792B0B47EF00957248 /* SceneDelegate.swift in Sources */,
