@@ -27,6 +27,8 @@
 		90E12F0C2B0ED21E00C63379 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E12F0B2B0ED21E00C63379 /* LoginViewModel.swift */; };
 		90E12F0E2B11D4E000C63379 /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E12F0D2B11D4E000C63379 /* RegistrationViewModel.swift */; };
 		90E12F112B14622C00C63379 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E12F102B14622C00C63379 /* AuthService.swift */; };
+		90E12F132B1B202B00C63379 /* NewMessageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E12F122B1B202B00C63379 /* NewMessageController.swift */; };
+		90E12F152B1B251900C63379 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E12F142B1B251900C63379 /* UserCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +53,8 @@
 		90E12F0B2B0ED21E00C63379 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		90E12F0D2B11D4E000C63379 /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
 		90E12F102B14622C00C63379 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		90E12F122B1B202B00C63379 /* NewMessageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMessageController.swift; sourceTree = "<group>"; };
+		90E12F142B1B251900C63379 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +132,7 @@
 			children = (
 				901EDE9D2B0B60BD00957248 /* Authentication */,
 				901EDE9B2B0B598400957248 /* ConversationsController.swift */,
+				90E12F122B1B202B00C63379 /* NewMessageController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -145,6 +150,7 @@
 			children = (
 				90E12F072B0EBCDC00C63379 /* InputContainerView.swift */,
 				90E12F092B0EC27900C63379 /* CustomTextField.swift */,
+				90E12F142B1B251900C63379 /* UserCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -321,12 +327,14 @@
 				90E12F112B14622C00C63379 /* AuthService.swift in Sources */,
 				901EDE772B0B47EF00957248 /* AppDelegate.swift in Sources */,
 				901EDE9C2B0B598400957248 /* ConversationsController.swift in Sources */,
+				90E12F152B1B251900C63379 /* UserCell.swift in Sources */,
 				901EDE792B0B47EF00957248 /* SceneDelegate.swift in Sources */,
 				901EDEA12B0B614600957248 /* RegistrationController.swift in Sources */,
 				901EDE9F2B0B60E400957248 /* LoginController.swift in Sources */,
 				901EDEA32B0B63CE00957248 /* Extensions.swift in Sources */,
 				90E12F0C2B0ED21E00C63379 /* LoginViewModel.swift in Sources */,
 				90E12F0A2B0EC27900C63379 /* CustomTextField.swift in Sources */,
+				90E12F132B1B202B00C63379 /* NewMessageController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
