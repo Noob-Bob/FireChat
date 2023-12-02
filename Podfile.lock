@@ -1,16 +1,22 @@
 PODS:
   - JGProgressHUD (2.2)
+  - SDWebImage (5.18.5):
+    - SDWebImage/Core (= 5.18.5)
+  - SDWebImage/Core (5.18.5)
 
 DEPENDENCIES:
   - JGProgressHUD
+  - SDWebImage (~> 5.18)
 
 SPEC REPOS:
   trunk:
     - JGProgressHUD
+    - SDWebImage
 
 SPEC CHECKSUMS:
   JGProgressHUD: d83d7a981b85d11205e19ff8ad5bb9c40571c847
+  SDWebImage: 7ac2b7ddc5e8484c79aa90fc4e30b149d6a2c88f
 
-PODFILE CHECKSUM: 1e514ccbba966efcaacb69e93999c110c22a0be6
+PODFILE CHECKSUM: 96c482dd792095ad3d6074ef91105d33d3684f28
 
 COCOAPODS: 1.14.2

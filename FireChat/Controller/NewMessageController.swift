@@ -13,17 +13,30 @@ class NewMessageController: UITableViewController {
     
     //MARK: - Properties
     
+    private var users = [User]()
+    
     //MARK: - Lifecycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
         configureUI()
+        fetchUsers()
         
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+    }
+    
+    //MARK: - API
+    
+    func fetchUsers() {
+        Service.fetchUsers { users in
+            self.users = users
+            self.tableView.reloadData()
+            print("DEBUG: Users in new message controller \(users)")
+        }
     }
     
     //MARK: - selectors
@@ -97,12 +110,14 @@ class NewMessageController: UITableViewController {
 // MARK: - Table view data source
 extension NewMessageController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 2
+        print("DEBUG: User count is \(users.count)")
+        return users.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath) as! UserCell
+        
+        cell.user = users[indexPath.row]
         
         return cell
     }

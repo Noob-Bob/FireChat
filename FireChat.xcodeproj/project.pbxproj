@@ -29,6 +29,8 @@
 		90E12F112B14622C00C63379 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E12F102B14622C00C63379 /* AuthService.swift */; };
 		90E12F132B1B202B00C63379 /* NewMessageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E12F122B1B202B00C63379 /* NewMessageController.swift */; };
 		90E12F152B1B251900C63379 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E12F142B1B251900C63379 /* UserCell.swift */; };
+		90E12F172B1B28F900C63379 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E12F162B1B28F900C63379 /* User.swift */; };
+		90E12F192B1B295300C63379 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E12F182B1B295300C63379 /* Service.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +57,8 @@
 		90E12F102B14622C00C63379 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		90E12F122B1B202B00C63379 /* NewMessageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMessageController.swift; sourceTree = "<group>"; };
 		90E12F142B1B251900C63379 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		90E12F162B1B28F900C63379 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		90E12F182B1B295300C63379 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				90E12F102B14622C00C63379 /* AuthService.swift */,
+				90E12F182B1B295300C63379 /* Service.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -158,6 +163,7 @@
 		901EDE992B0B590500957248 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				90E12F162B1B28F900C63379 /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -329,6 +335,8 @@
 				901EDE9C2B0B598400957248 /* ConversationsController.swift in Sources */,
 				90E12F152B1B251900C63379 /* UserCell.swift in Sources */,
 				901EDE792B0B47EF00957248 /* SceneDelegate.swift in Sources */,
+				90E12F172B1B28F900C63379 /* User.swift in Sources */,
+				90E12F192B1B295300C63379 /* Service.swift in Sources */,
 				901EDEA12B0B614600957248 /* RegistrationController.swift in Sources */,
 				901EDE9F2B0B60E400957248 /* LoginController.swift in Sources */,
 				901EDEA32B0B63CE00957248 /* Extensions.swift in Sources */,

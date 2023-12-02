@@ -7,5 +7,6 @@ target 'FireChat' do
 
   # Pods for FireChat
   pod 'JGProgressHUD'
+  pod 'SDWebImage', '~> 5.18'
 
 end
