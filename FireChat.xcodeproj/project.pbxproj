@@ -22,6 +22,7 @@
 		901EDE9F2B0B60E400957248 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901EDE9E2B0B60E400957248 /* LoginController.swift */; };
 		901EDEA12B0B614600957248 /* RegistrationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901EDEA02B0B614600957248 /* RegistrationController.swift */; };
 		901EDEA32B0B63CE00957248 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901EDEA22B0B63CE00957248 /* Extensions.swift */; };
+		909D54C82B1D443C0003CBDB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909D54C72B1D443C0003CBDB /* Constants.swift */; };
 		90E12F082B0EBCDC00C63379 /* InputContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E12F072B0EBCDC00C63379 /* InputContainerView.swift */; };
 		90E12F0A2B0EC27900C63379 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E12F092B0EC27900C63379 /* CustomTextField.swift */; };
 		90E12F0C2B0ED21E00C63379 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E12F0B2B0ED21E00C63379 /* LoginViewModel.swift */; };
@@ -55,6 +56,7 @@
 		901EDE9E2B0B60E400957248 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		901EDEA02B0B614600957248 /* RegistrationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationController.swift; sourceTree = "<group>"; };
 		901EDEA22B0B63CE00957248 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		909D54C72B1D443C0003CBDB /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		90E12F072B0EBCDC00C63379 /* InputContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputContainerView.swift; sourceTree = "<group>"; };
 		90E12F092B0EC27900C63379 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		90E12F0B2B0ED21E00C63379 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
@@ -187,6 +189,7 @@
 			isa = PBXGroup;
 			children = (
 				901EDEA22B0B63CE00957248 /* Extensions.swift */,
+				909D54C72B1D443C0003CBDB /* Constants.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -343,6 +346,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				901EDE7B2B0B47EF00957248 /* ViewController.swift in Sources */,
+				909D54C82B1D443C0003CBDB /* Constants.swift in Sources */,
 				90E12F0E2B11D4E000C63379 /* RegistrationViewModel.swift in Sources */,
 				90E12F082B0EBCDC00C63379 /* InputContainerView.swift in Sources */,
 				90E12F112B14622C00C63379 /* AuthService.swift in Sources */,
