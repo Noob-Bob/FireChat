@@ -20,11 +20,14 @@ class NewMessageController: UITableViewController {
     private var users = [User]()
     weak var delegate: NewMessageControllerDelegate?
     
+    private let searchController = UISearchController(searchResultsController: nil)
+    
     //MARK: - Lifecycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
         configureUI()
+        configureSearchController()
         fetchUsers()
         
         // Uncomment the following line to preserve selection between presentations
@@ -57,6 +60,15 @@ class NewMessageController: UITableViewController {
         tableView.tableFooterView = UIView()
         tableView.register(UserCell.self, forCellReuseIdentifier: reuseIdentifier)
         tableView.rowHeight = 80
+    }
+    
+    func configureSearchController() {
+        searchController.searchBar.showsCancelButton = false
+        navigationItem.searchController = searchController
+        searchController.obscuresBackgroundDuringPresentation = false
+        searchController.hidesNavigationBarDuringPresentation = false
+        searchController.searchBar.placeholder = "Search for a user"
+        definesPresentationContext = false
     }
 
 
