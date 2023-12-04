@@ -23,6 +23,8 @@
 		901EDEA12B0B614600957248 /* RegistrationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901EDEA02B0B614600957248 /* RegistrationController.swift */; };
 		901EDEA32B0B63CE00957248 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901EDEA22B0B63CE00957248 /* Extensions.swift */; };
 		909D54C82B1D443C0003CBDB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909D54C72B1D443C0003CBDB /* Constants.swift */; };
+		909D54CA2B1D58600003CBDB /* ConversationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909D54C92B1D58600003CBDB /* ConversationCell.swift */; };
+		909D54CC2B1D5B080003CBDB /* ConversationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909D54CB2B1D5B080003CBDB /* ConversationViewModel.swift */; };
 		90E12F082B0EBCDC00C63379 /* InputContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E12F072B0EBCDC00C63379 /* InputContainerView.swift */; };
 		90E12F0A2B0EC27900C63379 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E12F092B0EC27900C63379 /* CustomTextField.swift */; };
 		90E12F0C2B0ED21E00C63379 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E12F0B2B0ED21E00C63379 /* LoginViewModel.swift */; };
@@ -57,6 +59,8 @@
 		901EDEA02B0B614600957248 /* RegistrationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationController.swift; sourceTree = "<group>"; };
 		901EDEA22B0B63CE00957248 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		909D54C72B1D443C0003CBDB /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		909D54C92B1D58600003CBDB /* ConversationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationCell.swift; sourceTree = "<group>"; };
+		909D54CB2B1D5B080003CBDB /* ConversationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationViewModel.swift; sourceTree = "<group>"; };
 		90E12F072B0EBCDC00C63379 /* InputContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputContainerView.swift; sourceTree = "<group>"; };
 		90E12F092B0EC27900C63379 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		90E12F0B2B0ED21E00C63379 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
@@ -160,6 +164,7 @@
 			children = (
 				90E12F0F2B11D4F300C63379 /* Authentication */,
 				90E12F222B1C56B100C63379 /* MessageViewModel.swift */,
+				909D54CB2B1D5B080003CBDB /* ConversationViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -172,6 +177,7 @@
 				90E12F142B1B251900C63379 /* UserCell.swift */,
 				90E12F1C2B1C460D00C63379 /* CustomInputAccessoryView.swift */,
 				90E12F1E2B1C4E1E00C63379 /* MessageCell.swift */,
+				909D54C92B1D58600003CBDB /* ConversationCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -358,12 +364,14 @@
 				90E12F172B1B28F900C63379 /* User.swift in Sources */,
 				90E12F192B1B295300C63379 /* Service.swift in Sources */,
 				90E12F1F2B1C4E1E00C63379 /* MessageCell.swift in Sources */,
+				909D54CC2B1D5B080003CBDB /* ConversationViewModel.swift in Sources */,
 				901EDEA12B0B614600957248 /* RegistrationController.swift in Sources */,
 				901EDE9F2B0B60E400957248 /* LoginController.swift in Sources */,
 				901EDEA32B0B63CE00957248 /* Extensions.swift in Sources */,
 				90E12F0C2B0ED21E00C63379 /* LoginViewModel.swift in Sources */,
 				90E12F1B2B1B358F00C63379 /* ChatController.swift in Sources */,
 				90E12F0A2B0EC27900C63379 /* CustomTextField.swift in Sources */,
+				909D54CA2B1D58600003CBDB /* ConversationCell.swift in Sources */,
 				90E12F212B1C53EF00C63379 /* Message.swift in Sources */,
 				90E12F132B1B202B00C63379 /* NewMessageController.swift in Sources */,
 				90E12F1D2B1C460D00C63379 /* CustomInputAccessoryView.swift in Sources */,

@@ -57,7 +57,7 @@ class ChatController: UICollectionViewController {
         Service.fetchMessages(forUser: user) { messages in
             self.messages = messages
             self.collectionView.reloadData()
-            self.collectionView.scrollToItem(at: [0, self.messages.count - 1], at: .bottom, animated: true)
+            self.collectionView.scrollToItem(at: [0, self.messages.count - 1], at: .bottom, animated: false)
         }
     }
     
